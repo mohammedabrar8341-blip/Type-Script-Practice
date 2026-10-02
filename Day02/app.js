@@ -70,5 +70,46 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //   changeAge(){
 //     this.age=55
 //   }
+//classes & objects:-public and private Access Modifier------------------>
+//Public:-
+// class BottleMaker {
+//   constructor(private name: string) {
+//     this.name = name;
+//   }
+//   changing() {
+//     this.name = "raj";
+//   }
 // }
+// //[if we use public we can change variable in any where in class & obj]
+// let b1 = new BottleMaker("milton");
+// b1.changing();
+// console.log(b1);
+//Private:-
+// [pivate can also change from anywhere in same class ]
+// class Bottle {
+//   public Material: string = "Meatl";
+//   constructor(public name: string) {}
+// }
+// class MetalBottle extends Bottle {
+//   constructor(name: string) {
+//     super(name);
+//   }
+//   getValue() {
+//     (console.log(this.name), this.Material);
+//   }
+// }
+// let b1 = new MetalBottle("Celo");
+// Protected:-  [it can use one class+if it  entends then also it can use ]
+// class Car {
+//   protected brand: string = "TATA";
+// }
+// class CarDeatils extends Car {
+//   public Model: string = "2023";
+//   changeName() {
+//     this.brand = "xyz";
+//   }
+// }
+// let c1 = new CarDeatils();
+// c1.changeName()
+// // c1.brand="something"    //error
 //# sourceMappingURL=app.js.map
