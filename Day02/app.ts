@@ -127,3 +127,27 @@
 // let c1 = new CarDeatils();
 // c1.changeName()
 // // c1.brand="something"    //error
+
+//Extra :----------------------------------------.> [readonly]
+// class User {
+//     constructor(public readonly name:string) {
+
+//     }
+//     changeName(){
+//         this.name="hello "
+//     }
+
+// }
+// let u1=new User("abrar")
+// u1.changeName()
+
+//Paramater----------------------------------->
+class User {
+  constructor(
+    public name: string,
+    public age: string,
+    public gender?: string,        // ? we use this for optional 
+  ) {}
+}
+let u1 = new User("abrar", "21", "male");
+let u2 = new User("atif", "17");

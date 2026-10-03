@@ -112,4 +112,27 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // let c1 = new CarDeatils();
 // c1.changeName()
 // // c1.brand="something"    //error
+//Extra :----------------------------------------.> [readonly]
+// class User {
+//     constructor(public readonly name:string) {
+//     }
+//     changeName(){
+//         this.name="hello "
+//     }
+// }
+// let u1=new User("abrar")
+// u1.changeName()
+//Paramater----------------------------------->
+class User {
+    name;
+    age;
+    gender;
+    constructor(name, age, gender) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+    }
+}
+let u1 = new User("abrar", "21", "male");
+let u2 = new User("atif", "17");
 //# sourceMappingURL=app.js.map
