@@ -142,12 +142,71 @@
 // u1.changeName()
 
 //Paramater----------------------------------->
-class User {
-  constructor(
-    public name: string,
-    public age: string,
-    public gender?: string,        // ? we use this for optional 
-  ) {}
-}
-let u1 = new User("abrar", "21", "male");
-let u2 = new User("atif", "17");
+// class User {
+//   constructor(
+//     public name: string,
+//     public age: string,
+//     public gender?: string,        // ? we use this for optional
+//   ) {}
+// }
+// let u1 = new User("abrar", "21", "male");
+// let u2 = new User("atif", "17");
+
+//Gatters & setters------------------------------------->
+//Noraml :-
+// class Users {
+//   constructor(
+//     public name: string,
+//     public age: string,
+//   ) {}
+//   getName() {
+//     return this.name;
+//   }
+
+//   setName(v: string) {
+//     this.name = v;
+//   }
+// }
+
+// let d1 = new Users("raj", "43");
+
+//from this we can call direct vaialbe name not  menthod
+// class Users {
+//   constructor(
+//     public _name: string,
+//     public age: string,
+//   ) {}
+//   get name() {
+//     return this._name;
+//   }
+//   set name(value: string) {
+//     this._name = value;
+//   }
+// }
+
+// let d1 = new Users("raj", "43");
+
+//Static Members-------------------------------------------------->
+
+// class Upadate {
+//   static version = 2.0;
+
+//   static getRandomNumber() {
+//     return Math.random();
+//   }
+// }
+
+//Abstract Classes--------------------------------------------->
+// class Payment{
+//     constructor(protected amount:number,protected account:number){}          }------> creating instance 
+//     isPaymentValid(amount:number){
+//         return this.amount>0
+//     }
+// }
+
+// class Checking extends Payment{                                  }----------------> and it by extending it
+
+// }
+
+
+
