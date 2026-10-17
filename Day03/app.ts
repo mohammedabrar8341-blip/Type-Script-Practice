@@ -58,7 +58,7 @@
 // abcd(12)
 // abcd(true)
 
-//Generics Funcation :----------
+//Generics Funcation :------------------------------------------------------>
 //hum ek funcation o use karte waqt bata skte hai ki funcation arugemnt ko kis type se treat kare
 
 // function abcd <T>(a:T){}
@@ -102,8 +102,70 @@
 
 //Extra:-
 
-function abcd<T>(a: T, b: T): T {
-  return a;
-}
+// function abcd<T>(a: T, b: T): T {
+//   return a;
+// }
 
-abcd("hey", "hi");
+// abcd("hey", "hi");
+
+//Modules------------------------------------------------------------>
+//import and export
+
+//Type Assertions------------------------------------------------------------->
+// let a :any=12;
+
+// (a as string).
+// (<number>a).
+
+// let a = Number("21");
+// console.log(typeof a);
+
+//Non-null assertion operater---------------------------------------->
+// let a:null|string|undefined
+
+// a="hi"
+
+// a!
+
+//Type Guards---------------------------------------------------------------->
+// function abcd(arg: string | number | any) {
+//   if (typeof arg === "number") {
+//     return "number";
+//   } else if (typeof arg === "string") {
+//     return "string";
+//   } else {
+//     throw new Error("ERROR");
+//   }
+// }
+// console.log(abcd(12), abcd("hello"));
+// abcd(true);
+
+//typeof instanceof 
+
+// class TVRemote{
+//   switchTVoff(){
+//     console.log("off TV");
+    
+//   }
+// } 
+
+// class CarRemote{
+//   switchCARoff(){
+//     console.log("off car");
+    
+//   }
+// }
+
+// const tv= new TVRemote()
+// const car= new CarRemote()
+
+// function switchoffremot(remote :TVRemote|CarRemote)
+// {
+//   if (remote instanceof TVRemote) {
+//     remote.switchTVoff()  }
+//     else if (remote instanceof CarRemote){
+//       remote.switchCARoff()
+//     }
+// }
+
+// switchoffremot()
